@@ -6,6 +6,12 @@
 		body{
 			background: lightgray;
 		}
+		.maindiv{
+			width: 50%;
+		}
+		.userdiv{
+			background: rgb(230 230 230);
+		}
 		.userdiv img{
 			max-height: 200px;
 			max-width: 200px;
@@ -25,12 +31,46 @@
 		}
 		
 		.productdiv{
-			
+			background: linear-gradient(rgb(177 190 211),rgb(235 240 250));
+			height: auto;
+		}
+		.bottom-div{
+			text-align: center;
+		}
+		.timer span{
+			background: green;
+			padding: 10px;
+			color: white;
+			font-size: 20px;
+			font-weight: 500;
+			border-radius: 5px;
+		}
+		.timer-text{
+			margin-top: -8px;
+		}
+		.info-div{
+			background: white;
+			padding: 20px;
+    		margin: 50px;
+		}
+		.img-main-div{
+			display: inline-flex;
+		}
+		.product{
+			background: white;
+			width: 170px;
+			padding: 10px;
+			border: 3px solid lightgray;
+		}
+		.product-image{
+			height: 220px;
+			width: 150px;
+			border: 1px solid lightgray;
 		}
 	</style>
 </head>
 <body>
-	<div>
+	<div class="maindiv">
 		<div class="userdiv">
 			<img class="img1" src="myimages/user1.png" alt="img1" >
 			<img class="img2" src="myimages/top11.png" alt="img1" >
@@ -40,7 +80,45 @@
 		</div>
 
 		<div class="productdiv">
-			section2nd
+			<div class="bottom-div">
+				<br>
+				<div class="info-div">
+					<span>WELCOME OFFER</span>
+					<h1>20% Off our best sellers</h1>
+					<small>Don't miss this limited offer!</small>
+					<p class="timer">
+						<span>14</span> <span>43</span>
+					</p>
+					<p class="timer-text">
+						<small>Minutes</small> <small>Seconds</small>
+					</p>
+				</div>
+				<div class="img-main-div">
+					<div class="product">
+						<img class="product-image" src="myimages/top11.png">
+						<div class="product-section">
+							<h3>T-Shift</h3>
+							<span>Rs. 199/-</span>
+						</div>
+					</div>
+					<div class="product">
+						<img class="product-image" src="myimages/user1.png">
+						<div class="product-section">
+							<h3>T-Shift</h3>
+							<span>Rs. 299/-</span>
+						</div>
+					</div>
+					<div class="product">
+						<img class="product-image" src="myimages/top11.png">
+						<div class="product-section">
+							<h3>T-Shift</h3>
+							<span>Rs. 399/-</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<br><br><br><br><br>
 		</div>
 	</div>
 </body>
