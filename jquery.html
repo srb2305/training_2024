@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery</title>
+	<!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+	<script src="js/jquery.js"></script>
+	<style type="text/css">
+		.circle{
+			height: 550px;
+			width: 550px;
+			background: green;
+			color: white;
+			border-radius: 50%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>jQuery/JavaScript</h1>
+	<input type="button" name="" value="Hide Me" onclick="hideDiv()">
+	<input type="button" name="" value="Show Me" onclick="showDiv()">
+
+	<input type="button" name="" value="Show/Hide Me" onclick="showHideDiv()">
+
+	<input type="button" name="" value="FadeIn" onclick="divFadeIn()">
+	<input type="button" name="" value="FadeOut" onclick="divFadeOut()">
+
+	<div class="circle">
+		ABC
+	</div>
+
+	<script type="text/javascript">
+		function hideDiv(){
+			// alert('Registration Successfully..... ');
+			$('.circle').hide();
+		}	
+
+		function showDiv(){
+			$('.circle').show();
+		}	
+		function showHideDiv(){
+			$('.circle').toggle();
+		}
+		function divFadeIn(){
+			$('.circle').fadeIn(5000);
+		}
+		function divFadeOut(){
+			$('.circle').fadeOut(5000);
+		}
+	</script>
+
+
+</body>
+</html>
