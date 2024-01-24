@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<h1>jQuery Calculator Function</h1>
+	<input type="number" class="inputfield" id="first_input" placeholder="Enter first value">
+	<input type="number" class="inputfield" id="second_input" placeholder="Enter second value">
+
+	<br>
+	<input type="button" class="math" value="+">
+	<input type="button" class="math" value="-">
+	<input type="button" class="math" value="*">
+	<input type="button" class="math" value="/">
+	<p id="output">Output will be show here : </p>
+
+
+	<script type="text/javascript">
+		$(document).on('click','.math',function(){
+			var operator = $(this).val();
+			var first = parseFloat($('#first_input').val());
+			var second = parseFloat($('#second_input').val());
+			if(operator == '+'){
+				$('#output').html('<h2>'+first+second+'</h2>');
+			}
+			if(operator == '-'){
+				$('#output').text(first-second);
+			}
+			if(operator == '*'){
+				$('#output').text(first*second);
+			}
+			if(operator == '/'){
+				$('#output').text(first/second);
+			}
+		});
+
+	</script>
+</body>
+</html>

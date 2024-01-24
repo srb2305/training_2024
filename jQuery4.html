@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script src="js/jquery.js"></script>
+</head>
+<body>
+	<h1>jQuery</h1>
+	<input type="text" class="inputfield" id="first_name" placeholder="Enter first name">
+	<input type="text" class="inputfield" id="last_name" placeholder="Enter last name">
+
+	
+	<p id="output">Output will be show here</p>
+
+
+	<script type="text/javascript">
+		// $(document).on('keyup','#first_name',function(){
+		// 	var name = $('#first_name').val();
+		// 	$('#output').text(name);
+		// });
+
+		$(document).on('keyup','.inputfield',function(){
+			var name = $('#first_name').val();
+			var lastName = $('#last_name').val();
+			$('#output').text(name+' '+lastName);
+		});
+	</script>
+</body>
+</html>
